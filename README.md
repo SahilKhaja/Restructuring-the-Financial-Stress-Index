@@ -28,10 +28,9 @@ The methodology includes:
 
 ```
 financial-stress-index/
-├── data/               # Contains raw and processed datasets
-├── notebooks/          # Jupyter notebooks for experimentation and analysis
-├── src/                # Source code for ML models and utility functions
-├── results/            # Outputs and performance metrics
+├── Index data/               # Contains raw and processed datasets
+├── FSI_(on-levels-model)/          # Modelling was done on levels without differencing the data
+├── FSI_(Differenced_model)/                # Modelling was done on differenced data
 ├── README.md           # Project overview (this file)
 ```
 
@@ -45,36 +44,11 @@ cd financial-stress-index
 pip install -r requirements.txt
 ```
 
-## Usage
 
-### Running the Models
-
-1. Preprocess the data:
-   ```bash
-   python src/preprocess.py
-   ```
-
-2. Train models:
-   ```bash
-   python src/train_models.py
-   ```
-
-3. Evaluate results:
-   ```bash
-   python src/evaluate.py
-   ```
 
 ## Results
 
-The project demonstrates how restructuring the Financial Stress Index using machine learning techniques significantly improves accuracy in predicting financial stress events. The rolling window and AR-X framework were particularly effective in capturing temporal patterns.
-
-## Contributing
-
-Contributions are welcome! If you have ideas for improvement or additional features, feel free to fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+The project demonstrates how restructuring the Financial Stress Index using machine learning techniques significantly improves accuracy in predicting financial stress events. The rolling window and AR-X framework were particularly effective in capturing temporal patterns as it spiked higher than the orginal FSI. 
 
 ## Acknowledgments
 
